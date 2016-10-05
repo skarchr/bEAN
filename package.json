@@ -3,7 +3,7 @@
   "description": "Boilerplate for EAN (express, angular and node)",
   "main": "server.js",
   "scripts": {
-    "build": "gulp",
+    "postinstall": "gulp",
     "start": "node server.js"
   },
   "dependencies": {
