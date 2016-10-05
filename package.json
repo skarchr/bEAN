@@ -1,0 +1,18 @@
+{
+  "name": "bEAN",
+  "description": "Boilerplate for EAN (express, angular and node)",
+  "main": "server.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "browserify": "^13.1.0",
+    "ejs": "~1.0.0",
+    "express": "~4.9.8",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
