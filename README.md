@@ -14,7 +14,7 @@ Using:
 
 This project is based on the tutorial [Deploying Node Apps to Heroku](https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku) which can be found on [scotch.io](scotch.io).
 
-## Getting started
+## Getting ready
 
 Install all dependencies using node-package-manager:
 
@@ -22,16 +22,10 @@ Install all dependencies using node-package-manager:
 $ npm install
 ```
 
-Build the application:
+Build and start the application (defaults to localhost:8080):
 
 ```bash
-$ gulp
-```
-
-Start the application (defaults to localhost:8080):
-
-```bash
-$ node server.js
+$ gulp serve
 ```
 
 ## Deploy to Heroku 
