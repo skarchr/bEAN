@@ -3,19 +3,19 @@
   "description": "Boilerplate for EAN (express, angular and node)",
   "main": "server.js",
   "scripts": {
-    "postinstall": "gulp",
+    "postinstall": "browserify ./public/scripts/app.js > ./public/bundle.js",
     "start": "node server.js"
   },
   "dependencies": {
     "angular": "~1.5.8",
     "angular-route": "~1.5.8",
-    "browserify": "^13.1.0",
     "ejs": "~1.0.0",
-    "express": "~4.9.8",
-    "gulp": "^3.9.1",
-    "vinyl-source-stream": "^1.1.0"
+    "express": "~4.9.8"
   },
   "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^1.1.0",
     "child_process": "^1.0.2",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.10"
