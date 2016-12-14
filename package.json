@@ -3,7 +3,7 @@
   "description": "Boilerplate for EAN (express, angular and node)",
   "main": "server.js",
   "scripts": {
-    "postinstall": "browserify ./public/scripts/app.js > ./public/bundle.js",
+    "postinstall": "browserify ./public/scripts/app.js -t | uglifyjs -mc > ./public/bundle.js",
     "start": "node server.js"
   },
   "dependencies": {
@@ -14,10 +14,14 @@
   },
   "devDependencies": {
     "browserify": "^13.1.0",
-    "gulp": "^3.9.1",
-    "vinyl-source-stream": "^1.1.0",
     "child_process": "^1.0.2",
+    "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.10"
+    "gulp-watch": "^4.3.10",
+    "uglify-js": "^2.7.5",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "engines": {
+    "node":"^6.9.1"
   }
 }

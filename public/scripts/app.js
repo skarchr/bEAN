@@ -7,7 +7,7 @@ var RedCtrl = require('./controllers/RedController');
 
 
 angular.module('app',['ngRoute'])
-.config(function($routeProvider) {
+.config(['$routeProvider',function($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl : "./views/red.html",
@@ -21,6 +21,6 @@ angular.module('app',['ngRoute'])
             templateUrl : "./views/blue.html",
             controller:'blueCtrl'            
         });
-    })
+    }])
     .controller('blueCtrl', ['$scope', BlueCtrl])
     .controller('redCtrl', ['$scope', RedCtrl]);
