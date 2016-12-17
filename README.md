@@ -1,5 +1,6 @@
 
 # bEAN
+[![Build Status](https://travis-ci.org/skarchr/bEAN.svg?branch=master)](https://travis-ci.org/skarchr/bEAN)
 
 A simple boilerplate for EAN (express, angular and node).
 
